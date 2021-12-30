@@ -73,13 +73,11 @@ p.active {
   color: #1d3557;
   overflow: hidden;
 }
-.nav-links li a:hover,
-.copyright a:hover {
+.nav-links li a:hover {
   color: #e63946;
   transition: all 0.6s ease-in-out;
 }
-.nav-links li a::after,
-.copyright a::after {
+.nav-links li a::after {
   content: '';
   position: absolute;
   z-index: -1;
@@ -92,10 +90,7 @@ p.active {
 }
 .nav-links li a:hover:after,
 .nav-links li a:focus:after,
-.nav-links li a:active:after,
-.copyright a:hover:after,
-.copyright a:focus:after,
-.copyright a:active:after {
+.nav-links li a:active:after {
   left: 0;
   right: auto;
   width: 100%;
@@ -894,14 +889,6 @@ p.active {
   align-items: center;
   flex-wrap: wrap;
 }
-.footer-link {
-  font-size: 0.85rem;
-  font-weight: 500;
-  color: #1d3557;
-  text-decoration: none;
-  position: relative;
-  overflow: hidden;
-}
 .footer-link:hover {
   color: #e63946;
   cursor: pointer;
@@ -915,19 +902,29 @@ p.active {
   color: #1d3557;
   letter-spacing: 1px;
 }
+.footer-link {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #1d3557;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+}
 .copyright {
   flex-basis: 100%;
   text-align: center;
   color: #1d3557;
   border-top: 1px solid #1d3557;
 }
-.copyright a {
+.copyright a{
   text-decoration: none;
   position: relative;
   color: #457b9d;
   overflow: hidden;
 }
-
+.copyright a:hover{
+  
+}
 @media (max-width: 500px) {
   .footer-nav {
     flex-direction: column;
